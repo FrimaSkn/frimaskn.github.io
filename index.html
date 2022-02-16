@@ -9,6 +9,8 @@
 
         <!--==================== UNICONS ====================-->
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+        <!--==================== FONT-AWESOME ====================-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
         
         <!--==================== SWIPER CSS ====================-->
@@ -571,38 +573,14 @@
         <!--==================== SWIPER JS ====================-->
         <script src="assets/js/swiper-bundle.min.js"></script>
 
+        <!--==================== JQUERY JS ====================-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
         <!--==================== MAIN JS ====================-->
         <script src="assets/js/main.js"></script>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script>
-              $(document).ready(function(){
-                // Add smooth scrolling to all links
-                $("a").on('click', function(event) {
-                    if (this.hash !== "") {
-                        event.preventDefault();
-                        
-                        let hash = this.hash;
-                
-                        $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                        }, 800, function(){
-                    
-                        window.location.hash = hash;
-                        });
-                    } // End if
-                });
-            });
-
-        </script>
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZDNLEQSDJR"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-ZDNLEQSDJR');
-        </script>
+        <script src="assets/js/gtag.js"></script>
     </body>
 </html>

@@ -564,7 +564,7 @@
         </footer>
         
         <!--==================== SCROLL TOP ====================-->
-        <a href="#" class="scrollup" id="scroll-up">
+        <a href="#home" class="scrollup" id="scroll-up">
             <i class="uil uil-arrow-up scrollup__icon"></i>
         </a>
 
@@ -575,7 +575,26 @@
         <script src="assets/js/main.js"></script>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+              $(document).ready(function(){
+                // Add smooth scrolling to all links
+                $("a").on('click', function(event) {
+                    if (this.hash !== "") {
+                        event.preventDefault();
+                        
+                        var hash = this.hash;
+                
+                        $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                        }, 800, function(){
+                    
+                        window.location.hash = hash;
+                        });
+                    } // End if
+                });
+            });
 
+        </script>
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZDNLEQSDJR"></script>
         <script>

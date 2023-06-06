@@ -185,6 +185,7 @@ ul {
 
 a {
     text-decoration: none;
+    color: #ffff;
 }
 
 img {
@@ -211,6 +212,11 @@ img {
 .section__title,
 .section__subtitle{
     text-align: center;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
 }
 
 /*==================== LAYOUT ====================*/

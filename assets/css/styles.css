@@ -790,6 +790,10 @@ img {
     padding: 0 1.5rem;
 }
 
+.portfolio__data .button {
+    padding: 1rem .5rem;
+}
+
 .portfolio__img {
     width: 265px;
     border-radius: .5rem;
